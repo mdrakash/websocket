@@ -1,6 +1,7 @@
 <?php
 
 use App\Events\webevent;
+use App\Http\Controllers\ShortLinkController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,4 @@ Route::get('/', function () {
     return "event fire";
 });
 
+ShortUrl::routes();
